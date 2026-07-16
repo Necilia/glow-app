@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background-color: #111111;
+    background-color: olive;
     font-family: 'Plus Jakarta Sans', sans-serif;
     display: flex;
     justify-content: center;
@@ -97,18 +97,15 @@ p {
 .card p {
     color: white;
     font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    color: white;
 }
 
 .card h3 {
     margin: 2px;
     padding: 0;
     font-size: 1.2rem;
-}
-
-.card p {
-    margin: 0;
-    padding: 0;
-    color: white;
 }
 
 .card:hover {
@@ -119,4 +116,31 @@ p {
 
 .card.completed {
     opacity: 0.3;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#habit-input {
+    padding: 6px;
+    border: 1px solid white;
+    border-radius: 100px;
+    width: 200px;
+    font-size: 10px;
+}
+
+#add-btn {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 9px;
+}
+
+@media (max-width: 600px) {
+    .cards-container {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
